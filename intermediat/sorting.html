@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to sort the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var words = ["Tesla", "Audi", "Renault", "Volvo", "Mazda", "Fiat", "Ferrari"];
+document.getElementById("demo").innerHTML = words;
+
+function myFunction() {
+  words.sort();
+  document.getElementById("demo").innerHTML = words ;
+}
+</script>
+
+</body>

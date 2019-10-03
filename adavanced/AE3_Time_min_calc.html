@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Seconds calculator</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <input type="number" name="minutes" id="minutes">
+    <button type="" onclick="calci()">Submit</button>
+    <p id="output"></p>
+    <script>
+    function calci() {
+    	var h;
+        input = document.getElementById("minutes").value;
+        var h = Math.floor(input/60);
+        var mins = Math.floor(input-(h*60));
+        console.log(input, h, mins)
+        document.getElementById("output").innerHTML = h + " Hours " + mins + " Minutes ";
+
+    }
+    </script>
+</body>
+
+</html>

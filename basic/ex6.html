@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title></title>
+
+</head>
+
+<body>
+
+   <p id='message'></p>
+   <button onclick="myFunction()">click to enter the name</button>
+
+   <script type="text/javascript">
+   function myFunction(){
+
+   
+
+    var person = prompts("Please enter your name", "Harry Potter");
+    
+    document.getElementById("message").innerHTML =
+
+    "Hello " + person + "! How are you today?";
+}
+    
+
+   </script>
+
+</body>
+
+</html>

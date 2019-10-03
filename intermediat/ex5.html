@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title></title>
+
+</head>
+
+<body>
+
+    <p id='message'></p>
+    <button onclick="myFunction()">click to enter degrees</button>
+
+    <script type="text/javascript">
+        function myFunction() {
+let math , physic , english;
+let deg=[math , physic , english]
+
+            math = prompt("Please enter your math degree",Number() );
+            physic = prompt("Please enter your physic degree",Number());
+            english = prompt("Please enter your enlgish degree",Number());
+            console.log( math)
+            let count =parseInt( deg.length);
+            console.log(count);
+            let sum =parseInt( math + physic + english);
+            console.log(sum);
+            let avg = parseInt (sum.value/count.value);
+            console.log (avg);
+            
+
+                document.getElementById("message").innerHTML ="sum is " + Number(sum) +" and Av is " + Number(avg);
+        }
+
+
+    </script>
+
+</body>
+
+</html>
