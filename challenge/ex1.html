@@ -2,17 +2,47 @@
 <html>
 
 <body>
-    <input id = "x" type="date" value="23-2-2017">
-    <input onclick="click()" id ="button" type="button">
+   
+
+
+    <p>Change the date of the date field, and then click the button below.</p>
+
+<input type="date" id="myDate" value="2000-05-05">
+
+<p>Note that the default value is not affected when you change the value of the date field.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+  
+<p><strong>Note:</strong> input elements with type="date" do not show as any date field/calendar in IE 11 and earlier versions.</p>
+<p id="demo"></p>
+
+
+
+
+!!!
     <script>
-        function click(){
-            var x = document.getElementById("x").value;
-now = new Date(x) ;
+
+
+function myFunction() {
+  var x = document.getElementById("myDate");
+ 
+  var currentVal = x.value;
+
+  now = new Date(currentVal) ;
     defaultDate = now - 1000 * 60 * 60 * 24 * 1;
     defaultDate = new Date(defaultDate);
     console.log(defaultDate);
-        }
-        console.log(x);
+console.log(now);
+  
+ 
+    document.getElementById("demo").innerHTML = " the day before "
+    +defaultDate ;
+   
+
+
+
+
+}
 
     </script>
 </body>
