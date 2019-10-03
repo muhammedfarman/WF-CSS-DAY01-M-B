@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" content="content">
+
+<body>
+	<p id="hundred"></p>
+	<p id="fifty"></p>
+	<p id="twenty"></p>
+	<p id="ten"></p>
+
+    <input type="number" name="input" id="input" value="400">
+    <button type="button" onclick="output()">Submit</button>
+    <script>
+    function output() {
+
+        x = document.getElementById("input").value;
+        hun = Math.floor(x/100);
+        fifty = Math.floor(Math.floor(x-(Math.floor(x/100)*100))/50);
+        twenty =Math.floor(( x-((50*fifty)+(100*hun)))/20);
+        ten = Math.floor((x-((50*fifty)+(100*hun)+(twenty*20)))/10);
+        document.getElementById("hundred").innerHTML = "100: " +hun;
+        document.getElementById("fifty").innerHTML = "50: " +fifty;
+        document.getElementById("twenty").innerHTML = "20: " +twenty;
+        document.getElementById("ten").innerHTML = "10: " +ten;
+    }
+
+    </script>
+</body>
+
+</html>
