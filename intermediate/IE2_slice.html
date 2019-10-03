@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+    var fruits = [" apple", " banana", " kiwi"];
+    var v1 = fruits.slice(0, 3);
+    fruits.push(" orange");
+    var v2 = fruits.slice(0, 4);
+    var v3 = fruits.slice(0, 3);
+
+
+    var animals = [" monkey", " horse", " dog"]
+    var v4 = animals.slice(0, 3);
+    animals.sort()
+    var v5 = animals.slice (0,3);
+    animals.unshift(" cat");
+    var v6 = animals.slice(0, 4)
+
+
+    document.write("Start = " + v1 + "<br> Output = " + v2 + "<br> Output = " + v3 + "<br><br>Start = " + v4 + "<br> Output = " + v5 + "<br> Output = " + v6)
+
+    Output = dog, horse, monkey
+
+    Output = cat, dog, horse, monkey
+    </script>
+</body>
+
+</html>
