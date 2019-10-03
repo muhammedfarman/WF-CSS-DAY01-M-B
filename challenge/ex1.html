@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input id = "x" type="date" value=23-2-2017>
+    <input onclick="click()" id ="button" type="button">
+    <script>
+        function click(){
+            var x = document.getElementById("x").value;
+now = new Date(x) ;
+    defaultDate = now - 1000 * 60 * 60 * 24 * 1;
+    defaultDate = new Date(defaultDate);
+    console.log(defaultDate);
+        }
+        console.log(x);
+
+    </script>
+</body>
+
+</html>
